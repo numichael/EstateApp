@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using estate_app.Data.DatabaseContexts.ApplicationDbContext;
-using estate_app.Data.Entities;
-using estate_app.Interfaces;
-using estate_app.Models;
+using EstateApp.Data.DatabaseContexts.ApplicationDbContext;
+using EstateApp.Data.Entities;
+using EstateApp.Interfaces;
+using EstateApp.Models;
 
 namespace estate_app.Services
 {

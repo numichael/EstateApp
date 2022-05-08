@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
-using estate_app.Data.Entities;
-using estate_app.Models;
+using EstateApp.Data.Entities;
+using EstateApp.Models;
 
-namespace estate_app.Interfaces
+namespace EstateApp.Interfaces
 {
     public interface IAccountsService
     {

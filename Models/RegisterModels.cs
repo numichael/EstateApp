@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace estate_app.Models
+namespace EstateApp.Models
 {
     public class RegisterModel
     {

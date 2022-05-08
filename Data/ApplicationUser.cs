@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace estate_app.Data.Entities
+namespace EstateApp.Data.Entities
 {
     public class ApplicationUser : IdentityUser
     {

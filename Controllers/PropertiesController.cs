@@ -1,11 +1,11 @@
 using System;
 using System.Threading.Tasks;
-using estate_app.Interfaces;
+using EstateApp.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
-namespace estate_app.Controllers
+namespace EstateApp.Controllers
 {
     [Authorize]
     public class PropertiesController : Controller

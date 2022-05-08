@@ -1,11 +1,10 @@
 using System;
 using System.Threading.Tasks;
-using estate_app.Data.DatabaseContexts.ApplicationDbContext;
-using estate_app.Data.DatabaseContexts.AuthenticationDbContext;
-using estate_app.Data.Entities;
-using estate_app.Interfaces;
+using EstateApp.Data.DatabaseContexts.ApplicationDbContext;
+using EstateApp.Data.DatabaseContexts.AuthenticationDbContext;
+using EstateApp.Data.Entities;
+using EstateApp.Interfaces;
 using estate_app.Services;
-using EstateApp.Web.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -14,7 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace estate_app
+namespace EstateApp
 {
     public class Startup
     {
@@ -29,7 +28,7 @@ namespace estate_app
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContextPool<AuthenticationDbContext>(
-                options => options.UseSqlServer(Configuration.GetConnectionString("AuthenticationConnection"),
+                options => options.UseSqlServer(Configuration.GetConnectionString("AuthenticationConnectionString"),
 
                 sqlServerOptions =>
                 {
@@ -39,7 +38,7 @@ namespace estate_app
             ));
 
             services.AddDbContextPool<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("ApplicationConnection"),
+                options.UseSqlServer(Configuration.GetConnectionString("ApplicationConnectionString"),
 
                 sqlServerOptions =>
                 {
@@ -112,7 +111,7 @@ namespace estate_app
         public async Task CreateDefaultRolesAndUsers(IServiceProvider svp)
         {
             string[] roles = new string[] { "SystemAdministrator", "Agent", "User" };
-            var userEmail = "admin@estateapp.com";
+            var userEmail = "admin@EstateApp.com";
             var userPassword = "SuperSecretPassword@2020";
 
             var roleManager = svp.GetRequiredService<RoleManager<IdentityRole>>();

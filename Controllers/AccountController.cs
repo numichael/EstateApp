@@ -1,12 +1,12 @@
 using System;
 using System.Threading.Tasks;
-using estate_app.Data.Entities;
-using estate_app.Interfaces;
-using estate_app.Models;
+using EstateApp.Data.Entities;
+using EstateApp.Interfaces;
+using EstateApp.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace estate_app.Controllers
+namespace EstateApp.Controllers
 {
     public class AccountController : Controller
     {

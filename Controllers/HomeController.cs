@@ -1,9 +1,9 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using estate_app.Models;
+using EstateApp.Models;
 
-namespace estate_app.Controllers
+namespace EstateApp.Controllers
 {
     public class HomeController : Controller
     {

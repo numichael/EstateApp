@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using estate_app.Data.Entities;
+using EstateApp.Data.Entities;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
-namespace estate_app.Interfaces
+namespace EstateApp.Interfaces
 {
     public interface IPropertyService
     {
