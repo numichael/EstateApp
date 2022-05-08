@@ -1,12 +1,12 @@
 using System;
 using System.Text;
 using System.Threading.Tasks;
-using EstateApp.Data.Entities;
+using EstateApp.Data;
 using EstateApp.Interfaces;
 using EstateApp.Models;
 using Microsoft.AspNetCore.Identity;
 
-namespace estate_app.Services
+namespace EstateApp.Services
 {
     public class AccountsService : IAccountsService
     {

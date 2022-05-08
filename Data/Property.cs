@@ -1,4 +1,4 @@
-namespace EstateApp.Data.Entities
+namespace EstateApp.Data
 {
     public class Property : BaseEntity
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace EstateApp.Data.Entities
+namespace EstateApp.Data
 {
     public abstract class BaseEntity
     {

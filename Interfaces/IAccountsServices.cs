@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using EstateApp.Data.Entities;
+using EstateApp.Data;
 using EstateApp.Models;
 
 namespace EstateApp.Interfaces

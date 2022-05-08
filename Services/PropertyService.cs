@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using EstateApp.Data.DatabaseContexts.ApplicationDbContext;
-using EstateApp.Data.Entities;
+using EstateApp.Data;
 using EstateApp.Interfaces;
 using EstateApp.Models;
 
-namespace estate_app.Services
+namespace EstateApp.Services
 {
     public class PropertyService : IPropertyService
     {

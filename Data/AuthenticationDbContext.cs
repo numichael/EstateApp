@@ -1,8 +1,7 @@
-using EstateApp.Data.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace EstateApp.Data.DatabaseContexts.AuthenticationDbContext
+namespace EstateApp.Data
 {
     public class AuthenticationDbContext : IdentityDbContext<ApplicationUser>
     {

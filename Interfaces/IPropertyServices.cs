@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using EstateApp.Data.Entities;
+using EstateApp.Data;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
 namespace EstateApp.Interfaces

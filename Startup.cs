@@ -1,10 +1,7 @@
 using System;
 using System.Threading.Tasks;
-using EstateApp.Data.DatabaseContexts.ApplicationDbContext;
-using EstateApp.Data.DatabaseContexts.AuthenticationDbContext;
-using EstateApp.Data.Entities;
+using EstateApp.Services;
 using EstateApp.Interfaces;
-using estate_app.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -12,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using EstateApp.Data;
 
 namespace EstateApp
 {
@@ -28,22 +26,14 @@ namespace EstateApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContextPool<AuthenticationDbContext>(
-                options => options.UseSqlServer(Configuration.GetConnectionString("AuthenticationConnectionString"),
+                options => options.UseSqlServer(Configuration.GetConnectionString("AuthenticationConnection")
 
-                sqlServerOptions =>
-                {
-                    sqlServerOptions.MigrationsAssembly("EstateApp.Data");
-                }
 
             ));
 
             services.AddDbContextPool<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("ApplicationConnectionString"),
+                options.UseSqlServer(Configuration.GetConnectionString("ApplicationConnection")
 
-                sqlServerOptions =>
-                {
-                    sqlServerOptions.MigrationsAssembly("EstateApp.Data");
-                }
             ));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
