@@ -27,8 +27,6 @@ namespace EstateApp
         {
             services.AddDbContextPool<AuthenticationDbContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("AuthenticationConnection")
-
-
             ));
 
             services.AddDbContextPool<ApplicationDbContext>(options =>
@@ -102,7 +100,7 @@ namespace EstateApp
         {
             string[] roles = new string[] { "SystemAdministrator", "Agent", "User" };
             var userEmail = "admin@EstateApp.com";
-            var userPassword = "SuperSecretPassword@2020";
+            var userPassword = "SuperSecretPassword@2022";
 
             var roleManager = svp.GetRequiredService<RoleManager<IdentityRole>>();
             foreach (var role in roles)
@@ -123,7 +121,7 @@ namespace EstateApp
                     Email = userEmail,
                     UserName = userEmail,
                     EmailConfirmed = true,
-                    PhoneNumber = "+2349060697346",
+                    PhoneNumber = "+2348188680159",
                     PhoneNumberConfirmed = true
                 };
 
