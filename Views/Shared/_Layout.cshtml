@@ -69,11 +69,11 @@
     <meta name="keyword" content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+    <link href='~/http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="~/assets/css/normalize.css">
     <link rel="stylesheet" href="~/assets/css/font-awesome.min.css">
@@ -113,12 +113,12 @@
                 <div class="col-md-2 col-md-offset-5  col-sm-3 col-sm-offset-1  col-xs-12">
                     <div class="header-half header-social">
                         <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-vine"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="~/#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="~/#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="~/#"><i class="fa fa-vine"></i></a></li>
+                            <li><a href="~/#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="~/#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="~/#"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                <a class="navbar-brand" href="~/index.html"><img src="~/assets/img/logo.png" alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -169,11 +169,11 @@
                         </ul>
                     </li>
 
-                    <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="properties.html">Properties</a>
+                    <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="~/properties.html">Properties</a>
                     </li>
-                    <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="property.html">Property</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="~/property.html">Property</a></li>
                     <li class="dropdown yamm-fw" data-wow-delay="0.1s">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                        <a href="~/#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
                             data-delay="200">Template <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
@@ -251,12 +251,13 @@
                         </ul>
                     </li>
 
-                    <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="contact.html">Contact</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="~/contact.html">Contact</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
     <!-- End of nav bar -->
+@RenderBody()
 
     <!-- Footer area-->
     <div class="footer-area">
@@ -270,7 +271,7 @@
                             <h4>About us </h4>
                             <div class="footer-title-line"></div>
 
-                            <img src="assets/img/footer-logo.png" alt="" class="wow pulse" data-wow-delay="1s">
+                            <img src="~/assets/img/footer-logo.png" alt="" class="wow pulse" data-wow-delay="1s">
                             <p>Lorem ipsum dolor cum necessitatibus su quisquam molestias. Vel unde, blanditiis.</p>
                             <ul class="footer-adress">
                                 <li><i class="pe-7s-map-marker strong"> </i> 9089 your adress her</li>
@@ -285,7 +286,7 @@
                             <div class="footer-title-line"></div>
                             <ul class="footer-menu">
                                 <li><a href="~/properties.html">Properties</a> </li>
-                                <li><a href="#">Services</a> </li>
+                                <li><a href="~/#">Services</a> </li>
                                 <li><a href="~/submit-property.html">Submit property </a></li>
                                 <li><a href="~/contact.html">Contact us</a></li>
                                 <li><a href="~/faq.html">fqa</a> </li>
@@ -301,7 +302,7 @@
                                 <li>
                                     <div class="col-md-3 col-sm-4 col-xs-4 blg-thumb p0">
                                         <a href="~/single.html">
-                                            <img src="assets/img/demo/small-proerty-2.jpg">
+                                            <img src="~/assets/img/demo/small-proerty-2.jpg">
                                         </a>
                                         <span class="blg-date">12-12-2016</span>
 
@@ -316,7 +317,7 @@
                                 <li>
                                     <div class="col-md-3 col-sm-4 col-xs-4 blg-thumb p0">
                                         <a href="~/single.html">
-                                            <img src="assets/img/demo/small-proerty-2.jpg">
+                                            <img src="~/assets/img/demo/small-proerty-2.jpg">
                                         </a>
                                         <span class="blg-date">12-12-2016</span>
 
@@ -331,7 +332,7 @@
                                 <li>
                                     <div class="col-md-3 col-sm-4 col-xs-4 blg-thumb p0">
                                         <a href="~/single.html">
-                                            <img src="assets/img/demo/small-proerty-2.jpg">
+                                            <img src="~/assets/img/demo/small-proerty-2.jpg">
                                         </a>
                                         <span class="blg-date">12-12-2016</span>
 
@@ -367,15 +368,15 @@
 
                             <div class="social pull-right">
                                 <ul>
-                                    <li><a class="wow fadeInUp animated" href="https://twitter.com/kimarotec"><i
+                                    <li><a class="wow fadeInUp animated" href="~/https://twitter.com/kimarotec"><i
                                                 class="fa fa-twitter"></i></a></li>
-                                    <li><a class="wow fadeInUp animated" href="https://www.facebook.com/kimarotec"
+                                    <li><a class="wow fadeInUp animated" href="~/https://www.facebook.com/kimarotec"
                                             data-wow-delay="0.2s"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a class="wow fadeInUp animated" href="https://plus.google.com/kimarotec"
+                                    <li><a class="wow fadeInUp animated" href="~/https://plus.google.com/kimarotec"
                                             data-wow-delay="0.3s"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a class="wow fadeInUp animated" href="https://instagram.com/kimarotec"
+                                    <li><a class="wow fadeInUp animated" href="~/https://instagram.com/kimarotec"
                                             data-wow-delay="0.4s"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a class="wow fadeInUp animated" href="https://instagram.com/kimarotec"
+                                    <li><a class="wow fadeInUp animated" href="~/https://instagram.com/kimarotec"
                                             data-wow-delay="0.6s"><i class="fa fa-dribbble"></i></a></li>
                                 </ul>
                             </div>
@@ -394,10 +395,10 @@
                     </div>
                     <div class="bottom-menu pull-right">
                         <ul>
-                            <li><a class="wow fadeInUp animated" href="#" data-wow-delay="0.2s">Home</a></li>
-                            <li><a class="wow fadeInUp animated" href="#" data-wow-delay="0.3s">Property</a></li>
-                            <li><a class="wow fadeInUp animated" href="#" data-wow-delay="0.4s">Faq</a></li>
-                            <li><a class="wow fadeInUp animated" href="#" data-wow-delay="0.6s">Contact</a></li>
+                            <li><a class="wow fadeInUp animated" href="~/#" data-wow-delay="0.2s">Home</a></li>
+                            <li><a class="wow fadeInUp animated" href="~/#" data-wow-delay="0.3s">Property</a></li>
+                            <li><a class="wow fadeInUp animated" href="~/#" data-wow-delay="0.4s">Faq</a></li>
+                            <li><a class="wow fadeInUp animated" href="~/#" data-wow-delay="0.6s">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -425,6 +426,4 @@
     <script src="~/assets/js/main.js"></script>
 
 </body>
-
 </html>
-@RenderBody()
